@@ -5,11 +5,11 @@ class Application
     
     
     
-    if Time.now 
-      resp.write "Good Mornimg!"
-    else
-      resp.write "Good Afternoon!"
-    end
+    resp.write Time.now 
+      #resp.write "Good Mornimg!"
+    #else
+      #resp.write "Good Afternoon!"
+   # end
     
     resp.finish
   end
