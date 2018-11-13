@@ -5,7 +5,7 @@ class Application
     
     
     
-    if Time.now <= 12:00 a.m
+    if Time.now <= 12:00 a.m.
       resp.write "Good Mornimg!"
     else
       resp.write "Good Afternoon!"
