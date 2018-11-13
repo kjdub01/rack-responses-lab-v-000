@@ -5,7 +5,7 @@ class Application
     
     noon = "12:00"
     
-    if Time.now.strftime('%H:%M') < noon
+    if Time.now.strftime('%H:%M') <= noon
       resp.write "Good Mornimg!"
     else
       resp.write "Good Afternoon!"
