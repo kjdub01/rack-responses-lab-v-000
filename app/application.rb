@@ -3,13 +3,13 @@ class Application
   def call(env)
     resp = Rack::Response.new
     
+    noon = "12:00"
     
-    
-    resp.write Time.now.strftime('%H:%M') 
-      #resp.write "Good Mornimg!"
-    #else
-      #resp.write "Good Afternoon!"
-   # end
+    if Time.now.strftime('%H:%M') < noon
+      resp.write "Good Mornimg!"
+    else
+      resp.write "Good Afternoon!"
+    end
     
     resp.finish
   end
