@@ -5,7 +5,7 @@ class Application
     
     
     
-    resp.write Time.now 
+    resp.write Time.now.strftime('%H:%M') 
       #resp.write "Good Mornimg!"
     #else
       #resp.write "Good Afternoon!"
